@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.main-content {
+    padding-left: 10px;
+}
+
+ .recipe-hero-img {
+    height: 300px;
+    width: 450px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.recipe-hero {
+    display: flex;
+    gap: 2rem;
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+.recipe-hero h2 {
+    color: #F6E229;
+}
+
+.recipe-hero p {
+    color: wheat;
+}
+
+.recipe-info {
+    display: block;
+}
+
+.recipe-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .recipe-icons i {
+    font-size: 1.5rem;
+    color: #F6E229;
+  }
+  .recipe-icons h5,
+  .recipe-icons p {
+    margin-bottom: 0;
+    font-size: 0.85em;
+    color: #F6E229;
+  }
+  
+  .recipe-icons p {
+    color: #867d2c;
+  }
+
+  .recipe-content article h4 {
+    color: #F6E229;
+    padding: 5px;
+  }
+
+  .single-instruction header p {
+    color: #867d2c;
+  }
+
+ .single-instruction p {
+    color: wheat;
+ }
+
+ .second-column p {
+    color: wheat;
+ }

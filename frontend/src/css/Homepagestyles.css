@@ -1,0 +1,149 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --max-width: 1120px;
+    --transition: 0.3s ease-in-out all;
+    --headingFont: 'Roboto', sans-serif;
+    --bodyFont: 'Nunito', sans-serif;
+    --smallText: 0.7em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.nav-center {
+    width: 90vw;
+    max-width: var(--max-width);
+}
+
+.nav-header {
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-header img {
+    width: 150px;
+    height: auto;
+    border-radius: 0.45rem;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    transition: var(--transition);
+    justify-content: space-between;
+  }
+
+  .nav-link {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    color: gold;
+    letter-spacing: 0.05rem;
+    padding: 1rem 0;
+    transition: var(--transition);
+  }
+  
+  .nav-link:hover {
+    color: wheat;
+  }
+
+  .nav-link {
+    padding: 0;
+    border-top: none;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+
+  body {
+    background-image: url('../backgroundImg//background.jpg');
+    background-size: cover;
+    font-family: var(--bodyFont);
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+.text-container {
+    padding: auto;
+    margin: auto;
+    width: 600px;
+    height: 200px;
+    margin-top: 150px;
+    color: whitesmoke;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    word-wrap: normal;
+    color: rgb(248, 247, 246);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 0.45rem ;
+    width: 7rem;
+    height: 2rem;
+    text-align: center;
+    border: 0.1rem solid white;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(245, 147, 0);
+    border-radius: 1rem;
+    display: block;
+    font-weight: bold;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 yellow;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.page-footer {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(134, 131, 131);
+  }
+  .page-footer p {
+    margin-bottom: 0;
+  }
+  
