@@ -8,7 +8,7 @@ import {toast} from 'react-toastify'
 import { logout, reset } from '../features/auth/authSlice'
 import {createRecipe} from '../features/recipe/recipeSlice'
 import Spinner from '../components/Spinner'
-import {FaCocktail, FaCookie, FaFacebook, FaHeart, FaHouseUser, FaInstagram, FaPlus, FaSignOutAlt, FaTwitter, } from 'react-icons/fa'
+import {FaClock, FaCocktail, FaCookie, FaFacebook, FaHeart, FaHouseUser, FaInstagram, FaPlus, FaSignOutAlt, FaTwitter, FaUser, } from 'react-icons/fa'
 
 
 function CreateRecipe() {
@@ -116,17 +116,17 @@ function CreateRecipe() {
                   <textarea  cols="150" rows="10" placeholder="Description" id='description' name='description' value={description} onChange={onChange}></textarea>
                   <div className="recipe-icons">
                     <article>
-                      <i className="fas fa-clock"></i>
+                      <FaClock />
                       <h5>prep time</h5>
                       <input type="number" id='prep_time' name='prep_time' value={prep_time} onChange={onChange}/>
                     </article>
                     <article>
-                      <i className="far fa-clock"></i>
+                      <FaClock />
                       <h5>cook time</h5>
                       <input type="number" id='cook_time' name='cook_time' value={cook_time} onChange={onChange}/>
                     </article>
                     <article>
-                      <i className="fas fa-user-friends"></i>
+                      <FaUser />
                       <h5>serving</h5>
                       <input type='number' id='servings' name='servings' value={servings} onChange={onChange}/>
                     </article>

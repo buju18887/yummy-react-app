@@ -2,7 +2,7 @@ import '../css/single-recipe.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { logout, reset } from '../features/auth/authSlice'
-import {FaCocktail, FaCookie, FaFacebook, FaHeart, FaHouseUser, FaInstagram, FaPlus, FaSignOutAlt, FaTwitter, } from 'react-icons/fa'
+import {FaClock, FaCocktail, FaCookie, FaFacebook, FaHeart, FaHouseUser, FaInstagram, FaPlus, FaSignOutAlt, FaTwitter, FaUser, } from 'react-icons/fa'
 
 
 function SingleRecipe() {
@@ -67,17 +67,17 @@ function SingleRecipe() {
                   </p>
                   <div className="recipe-icons">
                     <article>
-                      <i className="fas fa-clock"></i>
+                      <FaClock />
                       <h5>prep time</h5>
                       <p>30 min.</p>
                     </article>
                     <article>
-                      <i className="far fa-clock"></i>
+                      <FaClock />
                       <h5>cook time</h5>
                       <p>15 min.</p>
                     </article>
                     <article>
-                      <i className="fas fa-user-friends"></i>
+                      <FaUser />
                       <h5>serving</h5>
                       <p>6 servings</p>
                     </article>
