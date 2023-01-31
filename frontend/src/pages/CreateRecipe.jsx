@@ -37,13 +37,17 @@ function CreateRecipe() {
             toast.error(message)
         }
 
-        if(isSuccess || recipe) {
-            navigate('/myrecipes')
+        if(!user) {
+          navigate('/login')
+        }
+
+        if(isSuccess) {
+            toast.success(message)
         }
 
         dispatch(reset())
 
-    }, [recipe, isError, isSuccess, message, navigate, dispatch])
+    }, [user, recipe, isError, isSuccess, message, navigate, dispatch])
 
     const onChange = (e) => {
       setFormData((prevState) => ({
@@ -87,12 +91,12 @@ function CreateRecipe() {
         <img src="/images/pfp.png" alt="Profile" />
         <h4>{user && user.name}</h4>
         <ul>
-                <li><a href="/dashboard"><FaHouseUser />Home</a></li>
-                <li><a href="/myrecipes"><FaCookie />My Recipes</a></li>
-                <li><a href="/likedrecipes"><FaHeart />Liked Recipes</a></li>
-                <li><a href="/createrecipe"><FaPlus />Create Recipe</a></li>
-                <li><a href="/drinks"><FaCocktail />Drinks</a></li>
-                <li><a href="" onClick={onLogout}><FaSignOutAlt />Logout</a></li>
+                <li><a href="/dashboard"><FaHouseUser /> Home</a></li>
+                <li><a href="/myrecipes"><FaCookie /> My Recipes</a></li>
+                <li><a href="/likedrecipes"><FaHeart /> Liked Recipes</a></li>
+                <li><a href="/createrecipe"><FaPlus /> Create Recipe</a></li>
+                <li><a href="/drinks"><FaCocktail /> Drinks</a></li>
+                <li><a href="" onClick={onLogout}><FaSignOutAlt /> Logout</a></li>
             </ul>
             <div className="social-media">
                 <a href="/dashboard"><FaFacebook /></a>

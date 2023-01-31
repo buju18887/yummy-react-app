@@ -21,9 +21,9 @@ function HomePage() {
         <cite><h6>Create, Review and Share differnt recipes of your choice in the food community</h6></cite>
     </div>
     <div className="buttons">
-        <a href="/signup" className="btn">SignUp</a>
-        <a href="/login" className="btn">Login</a>
-        <a href="/" className="btn">About</a>
+        <a href="/signup" className="button">SignUp</a>
+        <a href="/login" className="button">Login</a>
+        <a href="/" className="button">About</a>
     </div>
     </div>
     <footer className="page-footer">

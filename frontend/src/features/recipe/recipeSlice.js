@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import recipeService from './recipeService'
 
 const initialState = {
-    recipes: [],
+    recipe: [],
     isLoading: false,
     isSuccess: false,
     isError: false,
@@ -112,7 +112,7 @@ export const recipeSlice = createSlice({
           .addCase(getRecipe.fulfilled, (state, action) => {
             state.isLoading = false
             state.isSuccess = true
-            state.recipes = action.payload
+            state.recipe = action.payload
           })
           .addCase(getRecipe.rejected, (state, action) => {
             state.isLoading = false
@@ -125,7 +125,7 @@ export const recipeSlice = createSlice({
           .addCase(updateRecipe.fulfilled, (state, action) => {
             state.isLoading = false
             state.isSuccess = true
-            state.recipes = state.recipes.filter(
+            state.recipe = state.recipe.filter(
               (recipe) => recipe._id !== action.payload.id
             )
           })
@@ -140,7 +140,7 @@ export const recipeSlice = createSlice({
           .addCase(deleteRecipe.fulfilled, (state, action) => {
             state.isLoading = false
             state.isSuccess = true
-            state.recipes = state.recipes.filter(
+            state.recipe = state.recipe.filter(
               (recipe) => recipe._id !== action.payload.id
             )
           })

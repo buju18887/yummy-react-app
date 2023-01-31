@@ -107,7 +107,7 @@
     margin-top: 100px;
 }
 
-.btn {
+.button {
     font-size: 1rem;
     padding: 0.45rem ;
     width: 7rem;
@@ -123,14 +123,14 @@
     font-weight: bold;
 }
 
-.btn:hover {
+.button:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 yellow;
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
 
-.btn[disabled]:hover {
+.button[disabled]:hover {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;

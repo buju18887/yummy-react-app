@@ -36,20 +36,20 @@ const updateRecipe = async (recipeId, token) => {
         }
     }
 
-    const response = await axios.put(API_URL, recipeId, config)
+    const response = await axios.put(API_URL + `/:${recipeId}`, recipeId, config)
 
     return response.data
 }
 
 //delete recipe
-const deleteRecipe = async (recipeId, token) => {
+const deleteRecipe = async (user, token) => {
     const config = {
         headers: {
             Authorization: `Bearer ${token}`
         }
     }
 
-    const response = await axios.delete(API_URL, recipeId, config)
+    const response = await axios.delete(API_URL + `/:${user}`, user, config)
 
     return response.data
 }
